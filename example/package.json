@@ -1,0 +1,48 @@
+{
+  "name": "react-redux-webpack-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress -p",
+    "test" : "NODE_ENV=test mocha-webpack --reporter xunit --webpack-config webpack.config.js \"src/test/**/*.test.js\"",
+    "test:watch": "NODE_ENV=test mocha-webpack --reporter min --watch --webpack-config webpack.config.js \"src/test/**/*.test.js\"",
+    "lint" : "eslint src/main"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "react-redux-webpack": "https://github.com/padcom/react-redux-webpack.git"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "strict": [
+        2,
+        "never"
+      ],
+      "complexity": [
+        "error",
+        {
+          "max": 5
+        }
+      ],
+      "react/jsx-uses-react": 2,
+      "react/jsx-uses-vars": 2,
+      "react/react-in-jsx-scope": 2
+    },
+    "plugins": [
+      "react"
+    ]
+  }
+}
