@@ -10,7 +10,15 @@
   ],
   "author": "Matthias Hryniszak",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.1.0",
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
@@ -42,15 +50,5 @@
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0"
-  },
-  "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.4.1",
-    "react-router-redux": "^4.0.5",
-    "redux": "^3.5.2",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
   }
 }
